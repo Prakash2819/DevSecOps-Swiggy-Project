@@ -1,0 +1,31 @@
+import React from 'react'
+import swiggyLogo from '../Photos/swiggy.png';
+import { Col, Row } from 'react-bootstrap'
+import './Navigate.css'
+
+function Navigate() {
+    return (
+        <div>
+            <Row className='w-100 pt-3 shadow pb-2'>  
+                <Col >
+                    <div id='Nav-logo' style={{gap:"30px"}} className='d-flex justify-content-center align-items-center'>
+                        <img style={{display: 'block', margin: '0 auto',padding:'10px'}} width={'150px'} src={swiggyLogo} alt="lolll" />
+                        <p style={{fontSize:"13px"}} className='mt-3'><span className='fw-bold text-decoration-underline'>Amalapuram</span> 10-34, Shankar-matam Veedhi, Near Godavari Delta...</p>
+                        <i style={{color:"#e78838"}} className="fa-solid fa-angle-down"></i>
+                        </div>
+                </Col>
+                <Col>
+                        <div id='Nav-icons' className='d-flex justify-content-between align-items-center w-75 mt-3'>
+                            <p><i className="fa-solid fa-magnifying-glass"> </i> Search</p>
+                            <p><i className="fa-solid fa-percent"></i> Offers <sup style={{color:"#fda502"}}>New</sup> </p>
+                            <p><i className="fa-solid fa-bowl-food"></i> Help</p>
+                            <p><i className="fa-regular fa-user"></i> Profile</p>
+                            <p><i className="fa-solid fa-cart-shopping"></i> Cart</p>
+                        </div>
+                </Col>
+            </Row>
+        </div>
+    )
+}
+
+export default Navigate
